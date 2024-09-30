@@ -1,3 +1,4 @@
+Here’s the updated version of your project installation guide, which includes the steps to create a virtual environment (`venv`) before installing dependencies from `requirements.txt`:
 
 ```markdown
 # URL Shortener
@@ -14,7 +15,6 @@ A simple Python-based project that shortens long URLs into compact, shareable li
 
 - Python 3.x
 - Pip (Python Package Manager)
-- Pipenv (for managing virtual environments and dependencies)
 
 ## Installation
 
@@ -24,25 +24,25 @@ A simple Python-based project that shortens long URLs into compact, shareable li
    - Download Python from the official website: [Python.org](https://www.python.org/downloads/)
    - Make sure to check the box for adding Python to the system `PATH` during installation.
 
-2. **Install pipenv**:
-   ```bash
-   pip install pipenv
-   ```
-
-3. **Clone the repository**:
+2. **Clone the repository**:
    ```bash
    git clone https://github.com/akashbhaskar2011/URL_Shortner.git
    cd URL_Shortner
    ```
 
-4. **Install the required dependencies**:
+3. **Create a virtual environment**:
    ```bash
-   pipenv install --dev
+   python -m venv venv
    ```
 
-5. **Activate the virtual environment**:
+4. **Activate the virtual environment**:
    ```bash
-   pipenv shell
+   venv\Scripts\activate
+   ```
+
+5. **Install the required dependencies**:
+   ```bash
+   pip install -r requirements.txt
    ```
 
 6. **Run the project**:
@@ -63,25 +63,25 @@ A simple Python-based project that shortens long URLs into compact, shareable li
    brew install python
    ```
 
-3. **Install pipenv**:
-   ```bash
-   pip install pipenv
-   ```
-
-4. **Clone the repository**:
+3. **Clone the repository**:
    ```bash
    git clone https://github.com/akashbhaskar2011/URL_Shortner.git
    cd URL_Shortner
    ```
 
-5. **Install the required dependencies**:
+4. **Create a virtual environment**:
    ```bash
-   pipenv install --dev
+   python3 -m venv venv
    ```
 
-6. **Activate the virtual environment**:
+5. **Activate the virtual environment**:
    ```bash
-   pipenv shell
+   source venv/bin/activate
+   ```
+
+6. **Install the required dependencies**:
+   ```bash
+   pip install -r requirements.txt
    ```
 
 7. **Run the project**:
@@ -98,25 +98,25 @@ A simple Python-based project that shortens long URLs into compact, shareable li
    sudo apt install python3 python3-venv python3-pip git
    ```
 
-2. **Install pipenv**:
-   ```bash
-   pip install pipenv
-   ```
-
-3. **Clone the repository**:
+2. **Clone the repository**:
    ```bash
    git clone https://github.com/akashbhaskar2011/URL_Shortner.git
    cd URL_Shortner
    ```
 
-4. **Install the required dependencies**:
+3. **Create a virtual environment**:
    ```bash
-   pipenv install --dev
+   python3 -m venv venv
    ```
 
-5. **Activate the virtual environment**:
+4. **Activate the virtual environment**:
    ```bash
-   pipenv shell
+   source venv/bin/activate
+   ```
+
+5. **Install the required dependencies**:
+   ```bash
+   pip install -r requirements.txt
    ```
 
 6. **Run the project**:
@@ -132,14 +132,3 @@ A simple Python-based project that shortens long URLs into compact, shareable li
    ```
 
 2. Enter a long URL and hit "Shorten" to get your shortened URL.
-
-## Contributing
-
-Feel free to contribute to this project by submitting a pull request. Please ensure that your changes are well-documented and tested.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-```
-
-This version now reflects the usage of `pipenv` for managing dependencies across different environments (Windows, MacOS, and Ubuntu). Let me know if you'd like any further modifications!
